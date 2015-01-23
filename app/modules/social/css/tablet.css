@@ -1,0 +1,181 @@
+.feedlinks {
+  font-size: 82.35%;
+}
+
+.feedlinks span {
+  display: block;
+  font-size: 82.35%;
+  color: #969390;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.feedlinks a {
+  display: inline-block;
+  padding-left: 28px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  text-decoration: none;
+  line-height: 26px;
+  color: #333;
+  height: 24px;
+  text-align: middle;
+}
+
+.feedlinks a:visited, .feedlinks a:hover, .feedlinks a:active {
+  color: #333;
+}
+
+.feedlinks a.twitter {
+  background-image: url(/common/images/button-twitter-24.png);
+}
+.feedlinks a.facebook {
+  background-image: url(/common/images/button-facebook-24.png);
+}
+.feedlinks a.youtube {
+  background-image: url(/common/images/button-youtube-24.png);
+}
+.feedlinks a.linkedin {
+  background-image: url(/common/images/button-linkedin-24.png);
+}
+.feedlinks a.instagram {
+  background-image: url(/common/images/button-instagram-24.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .feedlinks a {
+    background-size: 24px 24px;
+  }
+  .feedlinks a.twitter {
+    background-image: url(/common/images/button-twitter.png);
+  }
+  .feedlinks a.facebook {
+    background-image: url(/common/images/button-facebook.png);
+  }
+  .feedlinks a.youtube {
+    background-image: url(/common/images/button-youtube.png);
+  }
+  .feedlinks a.linkedin {
+    background-image: url(/common/images/button-linkedin.png);
+  }
+  .feedlinks a.instagram {
+    background-image: url(/common/images/button-instagram.png);
+  }
+}
+
+.featured a    {
+    width: 80%;
+    display: block;
+    position: relative;
+    padding-left: 60px;
+    text-decoration: none;
+    font-size: 113%;
+    line-height: 1.33em;
+}
+
+.featured a,
+.featured a:visited {
+    color: @@@primary_text_color@@@;
+}
+
+.featured .service-detail {
+    font-size: 72.9%
+}
+
+.featured a img    {
+    float: left;
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.featured h3 {
+  text-transform: uppercase;
+  font-size: 76.47%;
+
+}
+
+.featured.twitter .author,
+.results .twitter .author,
+.featured.facebook .author,
+.results .facebook .author
+{
+    padding-left: 20px;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0px 0;
+    display: inline-block;
+}
+
+.featured.twitter .author, .results .twitter .author
+{
+    background-image: url(/common/images/button-twitter-24.png);
+}
+
+.featured.facebook .author, .results .facebook .author
+{
+    background-image: url(/common/images/button-facebook-24.png);
+}
+
+.results li.icon {
+    min-height: 48px;
+}
+
+.results li.icon a {
+    padding-left: 60px;
+}
+
+.results li.icon img {
+    width: 48px;
+    height: 48px;
+}
+
+div#nonfooternav div#navbar {
+    margin-bottom: 0px;
+}
+
+ul.results {
+    margin-top: 0;
+}
+
+ul.results li.icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+
+ul.results li.icon a {
+    padding-top: 0;
+    line-height: 1.2em;
+    color: #403f3d;
+    padding-bottom: 0;
+}
+
+ul.results li.icon a div.smallprint {
+    padding-top: 10px;
+}
+
+div.focal.author {
+    min-height: 45px;
+}
+
+div.focal.author img {
+    float: left;
+    position: absolute;
+
+}
+
+.featured h3 {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.featured a div.smallprint {
+    padding-top: 10px;
+
+}
+
+.byline {
+	border-bottom: none;
+}
