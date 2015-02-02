@@ -1,0 +1,128 @@
+#uwi-head{
+	color: white;
+	background-color: #BD0606;
+}
+.ui-content{
+	padding: 0
+}
+h1{
+	margin-right: 2em;
+}
+#search{
+	background-color: #A31A1A;
+	color: white;
+}
+.ui-title{
+	margin: 0 10% !important;
+	text-align: left !important;
+}
+.ui-field-contain{
+	margin: 1em;
+}
+.ui-input-has-clear{
+	padding: 0;
+}
+.weather{
+	background: rgba(200,200,200,.2);
+}
+.weather .img-container{ 
+	margin-left: 0em;
+	font-size: .8em;
+
+}
+.weather pre{
+	display: inline-block;
+	/*margin-left: 11em;
+	margin-top: -5em;*/
+	border-left: 2px solid rgb(27, 27, 187);;
+	margin-left: 3em;
+	max-width: 60%;
+
+}
+.temp{
+	position: relative;
+	top: 0em;
+
+}
+.ui-icon-myicon::after {
+background-image: url("../assets/news.png");
+/* Make your icon fit */
+background-size: 35px 35px;
+content: "";
+}
+
+.ugly-button{
+background-color: #BD0606 !important;
+width: 43px;
+height: 27px;
+border-radius: 32px !important;
+color: white !important;
+font-weight: normal !important;
+}
+
+.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after{
+	width: 40px;
+	height: 40px;
+}
+.ui-btn-icon-notext:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after{
+	left: 37%;
+}
+
+.ui-btn-icon-top:after{
+	top: 0.3em
+}
+.ui-content{
+	margin: 12px;
+}
+.calendar::after{
+	background-image: url("../assets/calendar.png");
+}
+
+.athletics::after{
+	background-image: url("../assets/athletics.png");
+}
+.directory::after{
+	background-image: url("../assets/directory.png");
+}
+
+.dining::after{
+	background-image: url("../assets/dining.png");
+}
+
+.libraries::after{
+	background-image: url("../assets/about.png");
+}
+
+.map::after{
+	background-image: url("../assets/map.png");
+}
+.transport::after{
+	background-image: url("../assets/transportation.png");
+}
+
+.social::after{
+	background-image: url("../assets/social.png");
+}
+
+.pictures::after{
+	background-image: url("../assets/pictures.png");
+}
+
+.video:::after{
+	background-image: url("../assets/video.png");
+}
+
+.emergency::after{
+	background-image: url("../assets/emergency.png");
+}
+
+li{
+	margin-top: 1em !important;
+}
+
+footer{
+	background-color: #BD0606 !important;
+	color: white !important;
+	font-weight: normal !important;
+}
+

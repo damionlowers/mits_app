@@ -1,0 +1,13 @@
+
+h1
+		{
+		font : Tahoma;
+		font-style: bold;
+		color:white;
+		}	
+.ui-bar
+	{
+		color: red;	
+		background-color: red;
+		font-size: 20px;	
+	}

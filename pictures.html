@@ -1,0 +1,564 @@
+
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+<head>
+
+<!-- Include meta tag to ensure proper rendering and touch zooming -
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<! Include jQuery Mobile stylesheets -
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<! Include the jQuery library -
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<! Include the jQuery Mobile library -
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+</head>
+	<style>
+.ui-bar-f {
+    color:white;
+    background-color: #7f0000;
+
+	border-color:	 		#ddd /*{a-bar-border}*/;
+	text-shadow: 0 /*{a-bar-shadow-x}*/ 1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ 	#000 /*{a-bar-shadow-color}*/;
+	font-weight: bold;
+
+}
+
+.ui-body-f {
+	background-color: 			#fff /*{a-body-background-color}*/;
+	border-color:	 		#ddd /*{a-body-border}*/;
+	color: 					#333 /*{a-body-color}*/;
+	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ 	#f3f3f3 /*{a-body-shadow-color}*/;
+
+}
+</style>
+</head> 
+<body> 
+
+<div data-role="page" id="base" data-title="Pictures">
+	<!--<div data-role="panel" id="mypanel">
+		<ul data-role="listview" data-inset="true" data-filter="false">
+			<li> Home</li>
+			<li> Categories</li>
+		</ul>
+	</div>-->
+	<div data-role="header" data-theme="b">
+		<a href="index.html" data-ajax="false" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a> <h1>Pictures</h1>
+		
+	</div><!-- /header -->
+	
+	<div data-role="main" class="ui-content" data-theme="e">	
+		<form>
+			<input data-type="search" name="search" id="search" placeholder="SEARCH"/>
+		</form>
+		<table data-role="table" class="ui-responsive" align="center" data-theme="a" id="images" scrollable="auto">
+			<thead>
+				<tr>
+					<th> &nbsp;</th>
+					<th> &nbsp;</th>
+					<th> &nbsp;</th>
+					<th> &nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td width="25%">
+				<img src="http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg" width="240" height="180"/>
+				</td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+				</tr>
+			<tr>
+				<td><img src="http://imageswiki.com/wp-content/uploads/2014/11/images-Getty-Images-Photo-by-Henrik-Sorensen-451006719.jpg" width="240" height="180"/>
+				</td>
+				<td>
+				<img src="http://www.mona.uwi.edu/sports/sites/default/files/sports/uploads/Support.jpg" width="240" height="180"/>
+				</td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+			</tr>
+			<tr>
+				<td><img src="http://imageswiki.com/wp-content/uploads/2014/11/images-Getty-Images-Photo-by-Henrik-Sorensen-451006719.jpg" width="240" height="180"/></td>
+				<td>
+				<img src="http://www.mona.uwi.edu/sports/sites/default/files/sports/uploads/Support.jpg" width="240" height="180"/>
+				</td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+				<td><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+			</tr>
+				</tbody>
+		</table>
+
+
+<!--
+		<ul data-role="listview" data-inset="true" data-filter="true">
+			<li><a href="#">Acura</a></li>
+			<li><a href="#">Audi</a></li>
+			<li><a href="#">BMW</a></li>
+			<li><a href="#">Cadillac</a></li>
+			<li><a href="#">Ferrari</a></li>
+
+		</ul>
+		<form>
+		   <form>
+		   <label for="slider-0">Input slider:</label>
+		   <input type="range" name="slider" id="slider-0" value="25" min="0" max="100"  />
+		</form>
+		<a href="#base2" data-role="button" data-icon="star">Star button</a>
+		
+		<img alt="not found" width="180" height="180"/>-->
+		<a href="#base2" data-role="button">Second Page </a>
+		<a href="#base3" data-role="button">Videos</a>
+		<a href="#base4" data-role="button">Emergency</a>
+	</div><!-- /content -->
+	<div data-role="footer">
+			<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+		</div>
+	</div><!-- /page -->
+
+
+<!-- 
+
+
+page 2 
+
+-->
+	<div data-role="page" id="base2" data-title="Pictures">
+		<div data-role="header" data-theme="b">
+			<a href="#" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+				<h1>	View
+				</h1>
+
+		</div>
+		<div data-role="content" height="80%" id="cont" data-theme="a">
+			<p align="center">
+				<img class="main"src="http://www.gettyimages.co.uk/CMS/StaticContent/1391099215267_hero2.jpg" alt="No Image loading" width="70%" height="400" />
+			</p>
+				<div id="scroll" overflow="auto" width="100%" border="solid black" >
+					<table data-role="table" class="ui-responsive" data-theme="a" data-mode="columntoggle" width="512" overflow="auto">
+					<tr height="100">
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					<td ><img src=" http://harvestfunders.com/upload/orig/project_9258.jpeg" width="240" height="180"/></td>
+					</tr>
+					</table>
+				</div>
+		<a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+		</div>
+		<div data-role="footer">
+			<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+		</div>
+
+</div>
+<!-- 
+
+
+
+page 3 
+
+
+-->
+<div data-role="page" id="base3" data-title="Videos">
+	<div data-role="header">
+<h1>Videos</h1>
+	</div>
+		<table data-role="table" class="ui-responsive" align="center" data-theme="b" data-mode="columntoggle" id="images" scrollable="auto" cellspacing="5">
+		<thead>
+			<tr>
+			<th width="25%">&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+        <tr>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+        </tr>
+        <tr>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+        </tr>
+        <tr>
+        <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          <td><img  src="http://penews.org/images/loader.gif" width="180" height="180"/></td>
+          </tr></tbody>
+    </table>
+	<a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+	<a href="#base31" data-role="button" data-icon="star" data-theme="a">To Player</a>
+</div>
+	<div data-role="footer">
+		<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+	</div>
+
+</div>
+
+
+
+<!-- 
+
+
+
+
+page 4 
+
+
+
+
+-->
+	<div data-role="page" id="base31" data-title="Player">
+		<div data-role="header">
+		</div>
+		<div data-role="content" height="80%" id="cont">
+			<video class="main"  width="100%" height="400" controls>	
+				<source src="https://www.youtube.com/watch?v=dnizWedZm4Q" type="video/mp4"/>
+			</video>
+			<table data-role="table" class="ui-responsive" data-theme="a" border="1" width>
+				<tr height="100">
+					<td width="100%">&nbsp;</td>
+				</tr>
+			</table>
+		<a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+		</div>
+		<div data-role="footer">
+			<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+		</div>
+
+	</div>
+
+<!-- 
+
+
+page 5
+
+
+-->
+<div data-role="page" id="base32" data-title="Emergency">
+	<div data-role="header">
+	<h1> Campus Security Information</h1>
+	</div>
+		<div data-role="content" height="80%" id="cont">
+			
+			<table data-role="table" class="ui-responsive" cellspacing="0" cellpadding="3" data-theme="b" align="center">
+				<tbody>
+				<tr valign="top">
+					<td class="PageTextHeaderMid" width="28%">
+					<h3>Post/Office</h3>
+					</td>
+					<td class="PageTextHeaderMid" width="35%">
+					<h3>Name</h3>
+					</td>
+					<td class="PageTextHeaderMid" width="36%">
+					<h3>EXTENSIONS/NUMBERS </h3>
+					</td>
+				</tr>
+				<tr>
+				<td >Director of Security </td>
+				<td >ACP Keith Gardner </td>
+				<td > 512-3700 (ext. 3700) </td>
+				</tr>
+				<tr valign="top">
+				<td>
+				<p>
+							<strong><br>
+							Mona Police<br>
+							</strong>
+							</p>
+				</td>
+				<td>
+				<p>
+							<strong><br>
+							Station Manager<br>
+							</strong>
+							</p>
+				</td>
+				<td>
+				<p>
+							EXT 2331/ 927-2298, 935- 8331
+							</p>
+				</td>
+				</tr>
+				<tr valign="top">
+				<td>
+				<p>
+							Campus Security Station Office
+							</p>
+				</td>
+				<td>Marcia Cummings Baker 
+				<p>
+							Keisha Donegan
+							</p>
+				<p>
+							Dorothy Brown
+							</p>
+				</td>
+				<td>EXT.2748/9 935-8748/9 784-8881 (c)</td>
+				</tr>
+				<tr valign="top">
+				<td>Manager, Campus Security </td>
+				<td>Major Raymond Dobbs</td>
+				<td>702-2532 (o) 833-5583 (c)</td>
+				</tr>
+				<tr valign="top">
+				<td>Zone Chief</td>
+				<td>Mr. Dave Patterson</td>
+				<td>546-5694</td>
+				</tr>
+				<tr valign="top">
+				<td>Special Projects Coordinator</td>
+				<td>Mr. Melbourne McKinley</td>
+				<td>332-3738 (c)</td>
+				</tr>
+				<tr valign="top">
+				<td>Admin. Assistant</td>
+				<td>Miss Audrey Brown</td>
+				<td>332-3750 (c)</td>
+				</tr>
+				<tr valign="top">
+				<td>Supervisors:</td>
+				<td>Anthony Clarke <br>
+							Derrick Heron <br>
+							Dorothy Brown <br>
+							Hixey Franklyn </td>
+				<td>332-3730 <br>
+							784-8435 <br>
+							784-8917 <br>
+							784-8933</td>
+				</tr>
+				<!--
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Derrick Heron</td>
+							<td bgcolor="#">-784-8435</td>
+						</tr>
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Dorothy Brown</td>
+							<td bgcolor="#">-784-8917</td>
+						</tr>
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Hixey Franklyn</td>
+							<td bgcolor="#">-784-8933</td>
+						</tr>
+						--><!--
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Derrick Heron</td>
+							<td bgcolor="#">-784-8435</td>
+						</tr>
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Dorothy Brown</td>
+							<td bgcolor="#">-784-8917</td>
+						</tr>
+						<tr valign="top">
+							<td bgcolor="#">  </td>
+							<td bgcolor="#">Hixey Franklyn</td>
+							<td bgcolor="#">-784-8933</td>
+						</tr>
+						--><tr valign="top">
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				</tr>
+				<tr valign="top">
+				<td class="PageTextHeader" colspan="3">
+							GUARD POST</td>
+				</tr>
+				<tr valign="top">
+					<td>Registry</td>
+					<td>&nbsp;</td>
+					<td>2721</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Book Shop</td>
+					<td>2269</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Main Library</td>
+					<td>2295</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Taylor Hall</td>
+					<td>2050</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Chancellor Hall</td>
+					<td>2641</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Mary Seacole Hall</td>
+					<td>2483, 3165, 2484</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2"> Irvine Hall</td>
+					<td>2343</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Irvine Hall Gate</td>
+					<td>2611</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Post Office Gate</td>
+					<td>2967</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">East Gate</td>
+					<td>2618</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">West Gate</td>
+					<td>2597</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">AZ Preston Hall</td>
+					<td>2691, 2113</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Rex Nettleford Hall</td>
+					<td>2131, 2137</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">West Road Gate</td>
+					<td>2232</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Hospital Gate</td>
+					<td>2610</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Queens Gate</td>
+					<td>2212</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Maintenance Dept.</td>
+					<td>2412</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Assembly Hall</td>
+					<td>2454</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">CCDC</td>
+					<td>2353/4</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">New Block</td>
+					<td>2041</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Medical Faculty #7</td>
+					<td>2478</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Pathology#7</td>
+					<td>2287</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Microbiology</td>
+					<td>2212</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Vice Chancellor Residence</td>
+					<td>2555</td>
+				</tr>
+				<tr valign="top">
+					<td colspan="2">Post Graduate Studies</td>
+					<td>3488</td>
+				</tr>
+				</tbody>
+			</table>
+
+		<a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+		</div>
+		<div data-role="footer">
+			<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+		</div>
+
+</div>
+<!-- 
+
+
+page 6 
+
+
+-->
+	<div data-role="page" id="base4" data-title="Emergency">
+		<div data-role="header">
+			<h1> Emergency Contacts</h1>
+		</div>
+		<div data-role="content" height="80%" id="cont" data-role="collapsible">
+			<ul data-role="listview" data-inset="true" data-filter="false">
+			<li>Medical<ul >
+				<li>Kingston and St.Andrew<ul> 
+				<li><img src="http://jamaicayp.com/sys/ad/55/GD_02069_Ambucare%20Company%20Services_Logo.png" alt="file not found"/><br>
+			Ambucare Ambulance Serv
+			<br> 204 Mountain Vw Av Kingston 6 Jamaica
+			<br>876-978-(2327)/6021/8253/5337
+			<br>www.ambucare-ja.com
+			<br>ambulacare_jm@yahoo.com
+			<br>info@ambucareja.com</li>
+			<li>Lifeline Medical Reponse
+			<br>Shop 40 Ocean Vill Shpng Cen Ocho Rios, St.Ann Jamaica
+			<br>876-974-6404</li>
+			<li> Accident &amp; Emergency Medical Servs Ltd
+			<br> 1 Sundown Cres Kingston 10 Jamaica
+			<br>876-758-8286/6975
+			<br>876-346-5621
+			<br>aems2011@gmail.com</li><a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+		</ul>
+				</li><a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a></ul></li>
+			<li>Campus Security 	
+				<ul> 
+					<li> Emergency Toll Free#: 1-888-429-5900</li>
+					<li><a href="#base32">More</a>
+					</li>
+				</ul>
+			</li>
+			<li>Law Enforcement<ul > <li>Emergency (Call Police!!) - 119</li><a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a></ul></li>
+			<li>Fire Department</li> Kingston and Sat.Andrew<ul> <li>  </ul>
+		<a href="#base" data-role="button" data-icon="star" data-theme="a">Back</a>
+		</div>
+		<div data-role="footer">
+			<p align="center"> &copy; <font size="1"> University of the West Indies Mona Campus</font><br></p>
+		</div>
+
+</div>
+<script type="text/javascript">
+/*
+	function nav(src){
+		$("#base2").pagecontainer("change");
+		var y = $(".main").attr("src",src);
+	};
+	$("#content table tr td").on("pagebeforeshow", function(){
+	var x = $("#content table tr td").children("img").on("tap","nav(this.src)");
+                x.attr("tap","nav(this.src)");
+
+	});
+*/
+</script>
+</body>
+</html>
